@@ -44,7 +44,7 @@ build/
 /out-tsc
 
 # dependencies
-/ui/node_modules
+/hms-ui/node_modules
 
 # IDEs and editors
 /.idea
