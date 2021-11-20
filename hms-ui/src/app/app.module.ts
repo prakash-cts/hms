@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { DefaultModule } from './layouts/default/default.module';
 import { LoginComponent } from './modules/login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LoginComponent } from './modules/login/login.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    DefaultModule
+    DefaultModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

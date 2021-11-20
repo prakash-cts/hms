@@ -8,12 +8,22 @@ const { SpecReporter, StacktraceOption } = require('jasmine-spec-reporter');
  * @type { import("protractor").Config }
  */
 exports.config = {
-  allScriptsTimeout: 11000,
+  allScriptsTimeout: 30000,
   specs: [
-    './src/**/*.e2e-spec.ts'
+    // './src/**/*ppTest.e2e-spec.ts'
+    './src/**/loginOrSignUp.e2e-spec.ts'
   ],
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
+    chromeOptions: {
+      args: [
+          '--window-size=1600,900',
+          // '--headless',
+          '--no-sandbox',
+          '--disable-gpu',
+          '--disable-browser-side-navigation'
+      ]
+  },
   },
   directConnect: true,
   SELENIUM_PROMISE_MANAGER: false,
@@ -21,7 +31,7 @@ exports.config = {
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
-    defaultTimeoutInterval: 30000,
+    defaultTimeoutInterval: 450000,
     print: function() {}
   },
   onPrepare() {

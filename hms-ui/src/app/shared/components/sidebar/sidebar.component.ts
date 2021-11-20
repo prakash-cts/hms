@@ -1,3 +1,4 @@
+import { StorageService } from './../../../common-services/storage.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-
-  constructor() { }
+  email!: string;
+  constructor(
+    private storageService:StorageService
+  ) { }
 
   ngOnInit(): void {
+    this.email = this.storageService.get('email');
   }
 
 }

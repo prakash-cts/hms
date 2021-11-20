@@ -18,8 +18,8 @@ export class AuthGuard implements CanActivate {
       if (this.storageService.get(EMAIL_KEY)) {
         return true;
       }
-      //this.router.navigate(['login']);
-      return true;
+      this.router.navigate(['login']);
+      return false;
   }
   
 }
