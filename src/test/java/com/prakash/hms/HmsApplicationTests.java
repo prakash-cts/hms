@@ -1,4 +1,4 @@
-package com.tcs.hms;
+package com.prakash.hms;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
