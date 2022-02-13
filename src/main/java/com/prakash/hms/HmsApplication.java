@@ -10,7 +10,7 @@ public class HmsApplication {
 	private static final Logger logger = LoggerFactory.getLogger(HmsApplication.class);
 	public static void main(String[] args) {
 		SpringApplication.run(HmsApplication.class, args);
-		logger.info("Hms Application Started");
+		logger.info("Hms Application Started !!!");
 	}
 
 }
