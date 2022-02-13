@@ -1,0 +1,12 @@
+<div *ngIf=false>
+  <h1 mat-dialog-title>Action <mat-icon mat-dialog-close class="float-end">close</mat-icon></h1>
+  <mat-divider></mat-divider>
+</div>
+
+<div mat-dialog-content class="pt-2 pb-3 font-weight-bold text-center">
+  {{message}}
+</div>
+<div class="text-center">
+  <button class="me-5" class="btn btn-primary me-3 btn-sm" (click)="submit()">Submit</button>
+  <button class="btn btn-secondary btn-sm" mat-dialog-close >Cancel</button>
+</div>
